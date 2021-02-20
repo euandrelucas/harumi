@@ -8,4 +8,5 @@ package-lock.json
 
 # CONFIDENCIAL FILES
 
+src/config/json/player.json
 src/config/json/config.json

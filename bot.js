@@ -12,6 +12,10 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
 require("./handler")(client)
-//require("./src/client/giveawayManager")(client)
+require("./src/client/lavalinkManager")(client)
 
 client.login(client.options.token);
+
+module.exports = {
+    client
+}

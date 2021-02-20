@@ -1,0 +1,13 @@
+{   
+    "plugins": {
+        "spotify": {
+            "id": "YOU SPOTIFY ID",
+            "secret": "YOU SPOTIFY SECRET"
+        }
+    },
+    "lavalink": {
+        "host": "YOU LAVALINK HOST",
+        "pass": "YOU LAVALINK PASS",
+        "port": 2333
+    }
+}
