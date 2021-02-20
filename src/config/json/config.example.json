@@ -1,3 +1,5 @@
 {
-    "token": "YOU BOT TOKEN"
+    "token": "YOU BOT TOKEN",
+    "shards": 1,
+    "prefix": "h!"
 }
