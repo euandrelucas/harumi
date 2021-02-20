@@ -1,12 +1,13 @@
 const player = require("../config/json/player.json");
 
-const Spotify  = require("erela.js-spotify");
-const { Manager } = require("erela.js");
+const Deezer  = require("erela.js-deezer");
+const Spotify = require("erela.js-spotify")
+const {Manager} = require("erela.js");
 
 module.exports = (client) => {
     
     const clientID = player.plugins.spotify.id;
-    const clientSecret = player.plugins.spotify.id; 
+    const clientSecret = player.plugins.spotify.secret; 
 
     client.manager = new Manager({
         nodes: [
@@ -16,14 +17,13 @@ module.exports = (client) => {
             password: player.lavalink.pass,
           },
         ],
-        /*
         plugins: [
+            new Deezer(),
             new Spotify({
-              clientID,
-              clientSecret
+                clientID,
+                clientSecret
             })
           ],
-          */
         send(id, payload) {
           const guild = client.guilds.cache.get(id);
           if (guild) guild.shard.send(payload);
@@ -34,12 +34,12 @@ module.exports = (client) => {
         .on("trackStart", (player, track) => {
           client.channels.cache
             .get(player.textChannel)
-            .send(`Now playing: ${track.title}`);
+            .send(`🎵  ›  Tocando Agora: \`${track.title}\``);
         })
         .on("queueEnd", (player) => {
           client.channels.cache
             .get(player.textChannel)
-            .send("Queue has ended.");
+            .send("⏸️  ›  A fila acabou, estou saindo do canal de voz");
       
           player.destroy();
         });
