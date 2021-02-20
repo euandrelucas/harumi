@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
 
     const player = message.client.manager.players.get(message.guild.id);
 
-    if(!player) return message.quote(`<:hm_error:812689130043211787>  ›  Não estou tocando nada nesse servidor, mas posso tocar se você quiser, basta digitar \`h!play <link | nome da música>\``)
+    if(!player) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Não estou tocando nada nesse servidor, mas posso tocar se você quiser, basta digitar \`h!play <link | nome da música>\``)
 
     const { title, duration } = player.queue.current;
 
@@ -16,9 +16,9 @@ exports.run = async (client, message, args) => {
     var play = "⏯️"
 
     let embed = new MessageEmbed()
-    .setAuthor(`${client.user.username} | NowPlaying`, message.author.displayAvatarURL({ dynamic: true, size: 2048 }))
+    .setAuthor(`${client.user.username} | NowPlaying`, client.user.displayAvatarURL({ dynamic: true, size: 2048 }))
     .setColor("F47FFF")
-    .setDescription(`${player.playing ? play : pause} ${title}\n\`${progressBar  <= 60000 ? `${API.time2(player.position)}s` : API.time2(player.position)} / ${API.time2(duration)}\``)
+    .setDescription(`${player.playing ? play : pause} ${title} (\`${progressBar  <= 60000 ? `${API.time2(player.position)}s` : API.time2(player.position)} / ${API.time2(duration)}\`)`)
     message.quote({embed})
 }
 exports.help = {
