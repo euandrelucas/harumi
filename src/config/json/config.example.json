@@ -1,5 +1,6 @@
 {
     "token": "YOU BOT TOKEN",
     "shards": 1,
+    "retry": 100,
     "prefix": "h!"
 }
