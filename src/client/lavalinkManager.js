@@ -39,6 +39,9 @@ module.exports = (client) => {
             .get(player.textChannel)
             .send(`🎵  ›  Tocando Agora: \`${track.title}\``);
         })
+        .on("playerMove", (player, currentChannel, newChannel) => {
+          player.voiceChannel = client.channels.cache.get(newChannel);
+      })
         .on("queueEnd", (player) => {
           client.channels.cache
             .get(player.textChannel)
