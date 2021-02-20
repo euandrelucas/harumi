@@ -9,6 +9,8 @@ module.exports = (client) => {
     const clientID = player.plugins.spotify.id;
     const clientSecret = player.plugins.spotify.secret; 
 
+    require("../utils/PlayerExtention")
+
     client.manager = new Manager({
         nodes: [
           {
@@ -24,6 +26,7 @@ module.exports = (client) => {
                 clientSecret
             })
           ],
+          autoPlay: true,
         send(id, payload) {
           const guild = client.guilds.cache.get(id);
           if (guild) guild.shard.send(payload);

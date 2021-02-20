@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
     if(channel.id !== player.voiceChannel) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa estar no mesmo canal de voz para executar esse comando`)
 
     const volume = Number(args[0]);
-    if (!volume || volume < 1 || volume > 100) return message.reply(`<:hm_error:812689130043211787>  ›  ${message.author}, O Volume inserido é invalido, tente novamente com um número entre \`1\` e \`100\``);
+    if (!volume || volume < 1 || volume > 100) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, O Volume inserido é invalido, tente novamente com um número entre \`1\` e \`100\``);
     player.setVolume(volume);
     return message.quote(`🔊  ›  ${message.author}, Volume alterado para \`${player.volume}%\``);
 }
