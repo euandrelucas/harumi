@@ -1,0 +1,11 @@
+# INUTIL FOLDERS
+
+/node_modules
+
+# INUTIL FILES
+
+package-lock.json
+
+# CONFIDENCIAL FILES
+
+src/config/json/config.json
