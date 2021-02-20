@@ -5,6 +5,8 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 
     if(!player) return;
 
+    const channel = client.channels.cache.get(player.textChannel)
+
     let canal = player.options.voiceChannel
 
     let guilda = player.options.guild

@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
 
     if(!channel) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author} Por favor, se conecte a algum canal de voz.`)
 
-    if(!args[0]) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author} Por favor, insira algum argumento, exemplo: \`play <link | nome da música>\``)
+    if(!args[0]) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author} Por favor, insira algum argumento, exemplo: \`h!play <link | nome da música>\``)
 
     const res = await client.manager.search(
         args.join(" "),
@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
         voiceChannel: message.member.voice.channel.id,
         textChannel: message.channel.id,
         selfDeafen: true,
-        volume: 100
+        volume: 50
       });
   
       player.connect();

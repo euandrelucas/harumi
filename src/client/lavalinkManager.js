@@ -30,7 +30,7 @@ module.exports = (client) => {
         },
       })
         .on("nodeConnect", node => console.log(`[LAVALINK] | Node `.green + `${node.options.identifier}`.cyan + ` connected`.green))
-        .on("nodeError", (node, error) => console.log(`[LAVALINK] | Node`.red + `${node.options.identifier}`.cyan + ` had an error: ${error.message}`.red))
+        .on("nodeError", (node, error) => console.log(`[LAVALINK] | Node `.red + `${node.options.identifier}`.cyan + ` had an error: ${error.message}`.red))
         .on("trackStart", (player, track) => {
           client.channels.cache
             .get(player.textChannel)
