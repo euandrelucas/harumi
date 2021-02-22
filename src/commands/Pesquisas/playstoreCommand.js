@@ -20,8 +20,7 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(
           `:x: | Não consegui encontrar o aplicativo, desculpe.`
         );
-      }
-
+        }
       let Embed = new Discord.MessageEmbed()
         .setColor(EmbedColor || "#3030E2")
         .setThumbnail(App.icon)
