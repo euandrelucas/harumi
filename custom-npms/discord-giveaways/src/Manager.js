@@ -60,7 +60,7 @@ class GiveawaysManager extends EventEmitter {
     generateMainEmbed(giveaway) {
         const embed = new Discord.MessageEmbed();
         embed
-            .setAuthor(giveaway.prize)
+            .setAuthor(`Harumi Giveaway | ` + giveaway.prize, "https://cdn.discordapp.com/avatars/812659884197150720/3e7f2c889f99c6a46c1a0e66137000e4.webp?size=2048")
             .setColor(giveaway.embedColor)
             .setFooter(`${giveaway.winnerCount} ${giveaway.messages.winners} • ${giveaway.messages.embedFooter}`)
             .setDescription(
@@ -89,7 +89,7 @@ class GiveawaysManager extends EventEmitter {
             formattedWinners;
         const embed = new Discord.MessageEmbed();
         embed
-            .setAuthor(giveaway.prize)
+        .setAuthor(`Harumi Giveaway | ` + giveaway.prize, "https://cdn.discordapp.com/avatars/812659884197150720/3e7f2c889f99c6a46c1a0e66137000e4.webp?size=2048")
             .setColor(giveaway.embedColorEnd)
             .setFooter(giveaway.messages.endedAt)
             .setDescription(
@@ -109,7 +109,7 @@ class GiveawaysManager extends EventEmitter {
     generateNoValidParticipantsEndEmbed(giveaway) {
         const embed = new Discord.MessageEmbed();
         embed
-            .setAuthor(giveaway.prize)
+        .setAuthor(`Harumi Giveaway | ` + giveaway.prize, "https://cdn.discordapp.com/avatars/812659884197150720/3e7f2c889f99c6a46c1a0e66137000e4.webp?size=2048")
             .setColor(giveaway.embedColorEnd)
             .setFooter(giveaway.messages.endedAt)
             .setDescription(

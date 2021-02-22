@@ -48,20 +48,20 @@ exports.GiveawayStartOptions = {};
  */
 exports.defaultGiveawayMessages = {
     giveaway: '🎉🎉 **GIVEAWAY** 🎉🎉',
-    giveawayEnded: '🎉🎉 **GIVEAWAY ENDED** 🎉🎉',
-    inviteToParticipate: 'React with 🥳 to participate!',
-    timeRemaining: 'Time remaining: **{duration}**',
-    winMessage: 'Congratulations, {winners}! You won **{prize}**!\n{messageURL}',
-    embedFooter: 'Powered by GiveawayBot',
-    noWinner: 'Giveaway cancelled, no valid participations.',
-    winners: 'winner(s)',
-    endedAt: 'End at',
-    hostedBy: 'Hosted by: {user}',
+    giveawayEnded: '🎉🎉 **GIVEAWAY ENCERRADO** 🎉🎉',
+    inviteToParticipate: 'Reaja com 🥳 para participar!',
+    timeRemaining: 'Tempo restante: **{duration}**',
+    winMessage: ':gift:  ›  Parabéns, {winners}! Vocês ganharam **{prize}**!\n{messageURL}',
+    embedFooter: 'Powered by Harumi',
+    noWinner: 'Giveaway cancelado, poucos/invalidos participantes.',
+    winners: 'Ganhadores(s)',
+    endedAt: 'Termino:',
+    hostedBy: 'Sorteio por: {user}',
     units: {
-        seconds: 'seconds',
-        minutes: 'minutes',
-        hours: 'hours',
-        days: 'days',
+        seconds: 'segundos',
+        minutes: 'minutos',
+        hours: 'horas',
+        days: 'dias',
         pluralS: false
     }
 };
