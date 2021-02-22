@@ -1,4 +1,4 @@
-console.log("[PLAYER] - Carregado com sucesso".brightCyan)
+console.log("[PLAYER] | Uploaded successfully".brightCyan)
 const { Structure } = require("erela.js");
 
 module.exports = Structure.extend('Player', Player => {
