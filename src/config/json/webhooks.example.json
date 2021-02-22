@@ -1,6 +1,18 @@
 {
-    "logs": {
-        "token": "THE LOG HOOK TOKEN",
-        "id": "THE LOG HOOK ID"
+    "ccommandlogs": {
+        "token": "YOU CORRECT COMMAND LOG TOKEN",
+        "id": "YOU CORRECT COMMAND LOG ID"
+    },
+    "ecommandlogs": {
+        "token": "YOU UNKNOW COMMAND LOG TOKEN",
+        "id": "YOU UNKNOW COMMAND LOG ID"
+    },
+    "cguildlogs": {
+        "token": "YOU GUILD CREATE LOG TOKEN",
+        "id": "YOU GUILD CREATE LOG ID"
+    },
+    "dguildlogs": {
+        "token": "YOU GUILD DELETE LOG TOKEN",
+        "id": "YOU GUILD DELETE LOG ID"
     }
 }
