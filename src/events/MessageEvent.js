@@ -42,9 +42,17 @@ if (!command) return elog.send(logembed)
   if(command.help.status === 'off') return;
   
 if (command) {
+try {
 
+  const andre = await client.users.fetch('742798447253651506')
+  const adg = await client.users.fetch('717766639260532826')
 log.send(logembed)
-command.run(client, message, args);
+
+await command.run(client, message, args).catch((e) => message.channel.send(`:x: | Aconteceu um erro e não foi possível executar esse comando, por favor entre em contato com ${andre.tag} ou ${adg.tag}\n` + '```' + e + '```'));
+
+} catch {
+  return
+}
 
 };
 
