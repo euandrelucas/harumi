@@ -6,7 +6,7 @@ moment.locale('pt-br')
 
 module.exports.run = async (client, message, args) => {
     if (!args[0])
-      return message.channel.send(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa escrever o nome de um aplicativo.`);
+      return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa escrever o nome de um aplicativo.`);
 
     PlayStore.search({
       term: args.join(" "),
