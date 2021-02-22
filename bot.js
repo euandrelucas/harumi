@@ -14,6 +14,7 @@ client.aliases = new Discord.Collection();
 
 require("./handler")(client)
 require("./src/client/lavalinkManager")(client)
+require("./src/client/giveawayManager")(client)
 
 client.login(client.options.token);
 

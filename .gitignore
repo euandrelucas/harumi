@@ -9,6 +9,7 @@ package-lock.json
 
 # CONFIDENCIAL FILES
 
+src/config/database/giveaways.json
 src/config/json/webhooks.json
 src/config/json/player.json
 src/config/json/config.json
