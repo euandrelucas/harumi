@@ -14,7 +14,7 @@ client.on("guildCreate", async guild => {
     .addField(`🍿 | Membros:`, `\`${guild.memberCount}/${guild.maximumMembers}\``)
     .setColor("GREEN")
     .setTimestamp()
-    .setFooter(`${client.user.username}, desenvolvida por ADG e MrAndre`)
+    .setFooter(`${client.user.username}, desenvolvida por ADG/MrAndre`)
     dlog.send(`+1 Servidor pra conta :sunglasses:`, logembed)
 
 })

@@ -10,6 +10,7 @@ exports.run = (client, message, args, prefix) => {
     let discordajuda = new MessageEmbed()
     .setTitle(`Ajuda | ${client.user.username}`)
     .addField(`Musica [${musicsize}]`, `${music}`)
+    .setColor("F47FFF")
     
     message.quote(discordajuda)
 }
