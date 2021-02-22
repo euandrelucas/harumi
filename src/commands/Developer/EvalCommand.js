@@ -21,6 +21,6 @@ exports.run = async (client, message, args) => {
 }
 exports.help = { 
     name: 'eval', 
-    aliases: ['ev', 'e'],
+    aliases: ['ev', 'e', 'evaluate'],
     category: 'developer'
   }
