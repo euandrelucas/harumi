@@ -14,7 +14,7 @@ client.on("guildDelete", async guild => {
     .addField(`🍿 | Membros:`, `\`${guild.memberCount}/${guild.maximumMembers}\``)
     .setColor("YELLOW")
     .setTimestamp()
-    .setFooter(`${client.user.username}, desenvolvida por ADG`)
+    .setFooter(`${client.user.username}, desenvolvida por ADG/MrAndre`)
     dlog.send(`-1 Servidor pra conta :pensive:`, logembed)
 
 })
