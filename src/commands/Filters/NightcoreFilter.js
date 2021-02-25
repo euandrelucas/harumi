@@ -11,12 +11,12 @@ exports.run = async (client, message, args) => {
 
     if(player.nightcore == false) {
         player.setNightcore(true)
-        return message.quote(`🔊  ›  ${message.author}, O NightCore foi ativado`)
+        return message.quote(`**🔊  ›  ${message.author}, O filtro \`NightCore\` foi ativado**`)
     }
 
     if(player.nightcore == true) {
         player.setNightcore(false)
-        return message.quote(`🔊  ›  ${message.author}, O NightCore foi desativado`)
+        return message.quote(`**🔊  ›  ${message.author}, O filtro \`NightCore\` foi desativado**`)
     }
 
 }
