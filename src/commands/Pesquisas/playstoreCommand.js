@@ -6,7 +6,7 @@ moment.locale('pt-br')
 
 module.exports.run = async (client, message, args) => {
     if (!args[0])
-      return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa escrever o nome de um aplicativo.`);
+      return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa escrever o nome de um aplicativo`);
 
     message.quote(`🔍  ›  ${message.author}, Pesquisando...`).then(m=> {
 
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
         App = JSON.parse(JSON.stringify(Data[0]));
       } catch (error) {
         return message.quote(
-          `<:hm_error:812689130043211787>  ›  ${message.author},Não consegui encontrar o aplicativo, desculpe.`
+          `<:hm_error:812689130043211787>  ›  ${message.author},Não consegui encontrar o aplicativo, desculpe`
         );
       }
 
@@ -47,4 +47,4 @@ exports.help = {
     name: 'playstore',
     aliases: [],
     categoria: 'Pesquisas',
-  }
+}
