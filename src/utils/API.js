@@ -1,5 +1,9 @@
 const API = {}
 
+const moment = require("moment")
+require("moment-duration-format")
+const byteSize = require('byte-size')
+
 API.time = function(s) {
     function pad(n, z) {
         z = z || 2;

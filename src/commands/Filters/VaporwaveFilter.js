@@ -10,18 +10,18 @@ exports.run = async (client, message, args) => {
     if(channel.id !== player.voiceChannel) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa estar no mesmo canal de voz para executar esse comando`)
 
     if(player.nightcore == false) {
-        player.setNightcore(true)
+        player.setVaporwave(true)
         return message.quote(`🔊  ›  ${message.author}, O filtro \`NightCore\` foi ativado`)
     }
 
     if(player.nightcore == true) {
-        player.setNightcore(false)
+        player.setVaporwave(false)
         return message.quote(`🔊  ›  ${message.author}, O filtro \`NightCore\` foi desativado`)
     }
 
 }
 exports.help = {
-    name: 'nightcore',
-    aliases: ['night'],
+    name: 'vaporwave',
+    aliases: ['vaporonda', 'vapor'],
     category: "filters",
 }

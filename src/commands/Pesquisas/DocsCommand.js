@@ -23,5 +23,5 @@ module.exports.run = async (client, message, args) => {
 exports.help = {
     name: 'docs',
     aliases: ["documentations", "djs", "discord.js"],
-    categoria: 'Pesquisas',
+    category: 'pesquisas',
 }

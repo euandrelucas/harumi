@@ -11,12 +11,12 @@ exports.run = async (client, message, args) => {
 
     if(player.bassboost == false) {
         player.setBassboost(true)
-        return message.quote(`**🔊  ›  ${message.author}, O filtro \`BassBoost\` foi ativado**`)
+        return message.quote(`🔊  ›  ${message.author}, O filtro \`BassBoost\` foi ativado`)
     }
 
     if(player.bassboost == true) {
         player.setBassboost(false)
-        return message.quote(`**🔊  ›  ${message.author}, O filtro \`BassBoost\` foi desativado**`)
+        return message.quote(`🔊  ›  ${message.author}, O filtro \`BassBoost\` foi desativado`)
     }
 
 }

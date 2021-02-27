@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const moment = require("moment")
 const PlayStore = require("google-play-scraper");
-const EmbedColor = ``;
 moment.locale('pt-br')
 
 module.exports.run = async (client, message, args) => {
@@ -20,12 +19,12 @@ module.exports.run = async (client, message, args) => {
         App = JSON.parse(JSON.stringify(Data[0]));
       } catch (error) {
         return message.quote(
-          `<:hm_error:812689130043211787>  ›  ${message.author},Não consegui encontrar o aplicativo, desculpe`
+          `<:hm_error:812689130043211787>  ›  ${message.author}, Não consegui encontrar o aplicativo, desculpe`
         );
       }
 
       let Embed = new Discord.MessageEmbed()
-        .setColor(EmbedColor || "#3030E2")
+        .setColor("006fcf")
         .setThumbnail(App.icon)
         .setURL(App.url)
         .setTitle(`${App.title}`)
@@ -46,5 +45,5 @@ module.exports.run = async (client, message, args) => {
 exports.help = {
     name: 'playstore',
     aliases: [],
-    categoria: 'Pesquisas',
+    category: 'pesquisas',
 }

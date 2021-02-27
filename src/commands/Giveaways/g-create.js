@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
     step = 1;
 
     if(!message.member.hasPermission('MANAGE_GUILD') && !message.member.roles.cache.some((r) => r.name === "GiveawayMOD")){
-        return message.channel.send(`:x: ${message.author} **|** You need to have the \`MANAGE_GUILD\` permissions to start giveaways.`);
+        return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Você precisa ter as permissões \`MANAGE_GUILD\` para gerenciar giveaways`);
     }
 
         const collector = message.channel.createMessageCollector(msg =>
