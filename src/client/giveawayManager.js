@@ -2,7 +2,13 @@ const { GiveawaysManager } = require('../../custom-npms/discord-giveaways/index'
 
 module.exports = (client) => {
 
-const manager = new GiveawaysManager(client, {
+    const GiveawayManagerWithShardSupport = class extends GiveawaysManager {
+        async refreshStorage() {
+            return client.shard.broadcastEval(() => this.giveawaysManager.getAllGiveaways());
+        }
+    };
+
+const manager = new GiveawayManagerWithShardSupport(client, {
 
     storage: './src/config/database/giveaways.json',
     updateCountdownEvery: 10000,

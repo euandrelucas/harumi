@@ -121,8 +121,8 @@ exports.GiveawayRerollOptions = {};
 exports.defaultRerollOptions = {
     winnerCount: null,
     messages: {
-        congrat: '🎁  ›  Novo ganhador(s) : {winners}! Parabéns!\n{messageURL}',
-        error: 'No valid participations, no winners can be chosen!'
+        congrat: '🎁  ›  Novo(s) ganhador(es) : {winners}! Parabéns!\n{messageURL}',
+        error: '🎁  ›  Sem participações válidas, nenhum vencedor pode ser escolhido'
     }
 };
 
