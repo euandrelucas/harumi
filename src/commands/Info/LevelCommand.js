@@ -13,7 +13,7 @@ exports.run = async (client, message, args, prefix) => {
 
     message.quote(`<a:hm_carregando:812686174342348822>  ›  ${message.author}, Processando...`).then(async msg => {
 
-    let image = await new canvas.RankCard()
+    let image = await new Canvas.RankCard()
     .setAddon("xp", false)
     .setAddon("rank", false)
     .setAvatar(target.avatarURL)
