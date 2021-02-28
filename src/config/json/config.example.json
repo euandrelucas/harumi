@@ -1,6 +1,15 @@
-{
-    "token": "YOU BOT TOKEN",
-    "shards": 1,
-    "retry": 100,
-    "prefix": "h!"
+{   
+    "discord": {
+        "token": "YOU BOT TOKEN",
+        "secret": "YOU CLIENT SECRET",
+        "id": "YOU BOT ID"
+    },
+    "client": {
+        "shards": 2,
+        "retry": 100,
+        "prefix": "h!"
+    },
+    "database": {
+        "mongoose": "YOU MONGODB URL"
+    }
 }

@@ -1,4 +1,6 @@
+const perms = require("../../config/json/perms.json");
 const { MessageEmbed } = require('discord.js')
+
 
 exports.run = async (client, message, args) => {
     const player = message.client.manager.players.get(message.guild.id);
@@ -6,7 +8,7 @@ exports.run = async (client, message, args) => {
     const bot = client;
     const c = client;
 
-    if(!["717766639260532826", "742798447253651506"].includes(message.author.id)) return message.quote(`<:hm_error:812689130043211787>  ›  Esse comando só pode ser ultilizado por meu desenvolvedor`)
+    if(!perms.developer.includes(message.author.id)) return message.quote(`<:hm_error:812689130043211787>  ›  Esse comando só pode ser ultilizado por meu desenvolvedor`)
 
     try {
         if(!args.join(' ')) return message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Escreva o que será evaluado`)

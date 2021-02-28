@@ -3,8 +3,8 @@ const config = require("./src/config/json/config.json")
 const c = require("colors")
 
 const manager = new ShardingManager('./bot.js', {
-  token: config.token,
-  totalShards: config.shards,
+  token: config.discord.token,
+  totalShards: config.client.shards,
   shardRespawn: true
 });
 

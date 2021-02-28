@@ -48,7 +48,7 @@ try {
   const adg = await client.users.fetch('717766639260532826')
 log.send(logembed)
 
-await command.run(client, message, args).catch((e) => message.channel.send(`:x: | Aconteceu um erro e não foi possível executar esse comando, por favor entre em contato com ${andre.tag} ou ${adg.tag}\n` + '```' + e + '```'));
+await command.run(client, message, args).catch((e) => message.quote(`<:hm_error:812689130043211787>  ›  ${message.author}, Aconteceu um erro e não foi possível executar esse comando, por favor entre em contato com **${andre.tag}** ou **${adg.tag}**\n` + '```js\n' + e + '\n```'));
 
 } catch {
   return

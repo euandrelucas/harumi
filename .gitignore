@@ -11,6 +11,8 @@ package-lock.json
 
 # CONFIDENCIAL FILES
 
+custom-npms/discord-backup/Backup/Backup-Data
+custom-npms/discord-backup/lib/backups
 src/config/database/giveaways.json
 src/config/json/webhooks.json
 src/config/json/player.json
