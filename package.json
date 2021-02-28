@@ -14,6 +14,7 @@
     "byte-size": "^7.0.0",
     "colors": "^1.4.0",
     "deepmerge": "^4.2.2",
+    "discord-canvas": "^1.4.1",
     "discord-xp": "^1.1.8",
     "discord.js": "^12.5.1",
     "erela.js": "^2.3.2",
