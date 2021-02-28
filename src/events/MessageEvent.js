@@ -11,7 +11,7 @@ client.on("message", async (message) => {
         let prefix = await client.options.prefix
 
     if(message.content == '<@' + client.user.id + '>' || message.content == '<@!' + client.user.id + '>') {
-return message.quote(`:sunflower:  **|**  Olá ${message.author}, me chamo **${message.author}**, meu prefixo neste servidor é **\`${prefix}\`**, caso queira saber meus comandos, utilize: **\`${prefix}help\`** ou **\`${prefix}ajuda\`**.`)
+return message.quote(`:sunflower:  ›  Olá ${message.author}, me chamo **${message.author}**, meu prefixo neste servidor é **\`${prefix}\`**, caso queira saber meus comandos, utilize: **\`${prefix}help\`** ou **\`${prefix}ajuda\`**.`)
   };
 
   const logembed = new (require("discord.js")).MessageEmbed()
