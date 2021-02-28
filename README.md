@@ -1,11 +1,11 @@
 # Harumi
 > Comandos diversos para seu servidor, um bot de discord único, Harumi
 # Funcionalidades
-> Comandos de Música (Requer Lavalink)
-> Comandos NSFW
-> Comandos de Sorteio
-> Comandos de Moderação
-- Tudo isso em um bot só, bot programado pela npm do discord.js, requer utilização de outras npms para o funcionamento correto
+- Comandos de Música (Requer Lavalink)
+- Comandos NSFW
+- Comandos de Sorteio
+- Comandos de Moderação
+> Tudo isso em um bot só, bot programado pela npm do discord.js, requer utilização de outras npms para o funcionamento correto
 # Requisitos
 - 1º Ter o [NodeJS](https://nodejs.org/) em seu computedor ou IDE (já que muitos usam IDE virtuais)
 - 2º Um editor de texto, recomendo o [Visual Studio Code](https://code.visualstudio.com/)
