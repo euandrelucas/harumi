@@ -14,5 +14,9 @@
     "dguildlogs": {
         "token": "YOU GUILD DELETE LOG TOKEN",
         "id": "YOU GUILD DELETE LOG ID"
+    },
+    "erros": {
+        "token": "YOU ERROR WEBHOOK TOKEN",
+        "id": "YOU ERROR WEBHOOK ID"
     }
 }
